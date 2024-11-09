@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday!</title>
+  <title>Happy Birthday</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <div class="card">
     <h1>Happy Birthday, [Friend's Name]!</h1>
     <p>Click below to reveal a surprise!</p>
+    <!-- First Button to Reveal Message -->
     <button onclick="revealMessage()">Open Card</button>
+    
+    <!-- Hidden Message Div with a Second Button to Inside_Card.html -->
     <div id="message" class="hidden">
-      🎉🎈 Hope you have a fantastic year ahead! 🎈🎉
+      <p>🎉 Hope you have a fantastic year ahead! 🎉</p>
+      <!-- Second Button to Navigate to Inside_Card.html -->
+      <button onclick="window.location.href='Inside_Card.html'">See Your Special Message</button>
     </div>
   </div>
 
   <script>
-    function revealMessage() 
-    {
-      document.getElementById('message').classList.toggle('hidden');
+    function revealMessage() {
+      document.getElementById('message').classList.remove('hidden');
     }
   </script>
 </body>
