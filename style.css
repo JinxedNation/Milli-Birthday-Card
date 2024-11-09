@@ -1,29 +1,80 @@
+/* Apply dark theme with gold accents */
+
 body 
 {
+  background-color: #2b1a2f;
+  color: #e3c185;
+  font-family: 'IM Fell English SC', serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: Arial, sans-serif;
-  background-color: #fffbcc;
+  margin: 0;
 }
 
-.card {
-  text-align: center;
-  padding: 20px;
-  border: 2px solid #ffcc00;
-  border-radius: 15px;
-  background: #fffbe6;
-}
-
-button 
+.card 
 {
-  padding: 10px 20px;
-  border: none;
-  background-color: #ff6600;
-  color: white;
-  cursor: pointer;
+  text-align: center;
+  padding: 30px;
+  border: 2px solid #e3c185;
+  border-radius: 10px;
+  background-color: #3b2a42;
+  max-width: 500px;
+  line-height: 1.5;
 }
-.hidden {
-  display: none;
+
+h1, h2
+{
+  color: #e3c185;
+  font-weight: bold;
+}
+
+h1 
+{
+  font-size: 1.8em;
+  color: #ff6a6a;
+}
+
+h2 
+{
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+p 
+{
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+hr 
+{
+  border: 0;
+  height: 1px;
+  background-color: #e3c185;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Special Symbols Styling */
+.symbol 
+{
+  color: #ffdd57; /* Gold color for symbols */
+  font-size: 1.5em;
+  margin: 0 5px;
+}
+
+.emphasis 
+{
+  color: #ff6a6a; /* Bright color for emphasis */
+  font-weight: bold;
+}
+
+.emphasis-quote 
+{
+  font-style: italic;
+  font-size: 1em;
+  color: #e3c185;
+  margin-top: 10px;
+  display: block;
 }
