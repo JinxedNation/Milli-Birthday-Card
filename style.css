@@ -78,3 +78,20 @@ hr
   margin-top: 10px;
   display: block;
 }
+
+
+.link-to-final-blessing {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.link-to-final-blessing a {
+  color: #ff6a6a;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-to-final-blessing a:hover {
+  text-decoration: underline;
+}
