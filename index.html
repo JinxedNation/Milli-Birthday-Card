@@ -9,10 +9,13 @@
 <body>
   <div class="card">
     <h1>Happy Birthday!</h1>
-    <!-- Hidden Message Div with a Second Button to Inside_Card.html -->
+    <p>Click below to reveal a surprise!</p>
+    <!-- Button to Reveal the Hidden Message -->
+    <button onclick="revealMessage()">Reveal Surprise</button>
+
+    <!-- Hidden Message Div with a Button to Inside_Card.html -->
     <div id="message" class="hidden">
       <p>🎉 Hope you have a fantastic year ahead! 🎉</p>
-      <!-- Second Button to Navigate to Inside_Card.html -->
       <button onclick="window.location.href='Inside_Card.html'">Open Card</button>
     </div>
   </div>
