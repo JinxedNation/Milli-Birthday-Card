@@ -1,7 +1,6 @@
 /* Apply dark theme with gold accents */
 
-body 
-{
+body {
   background-color: #2b1a2f;
   color: #e3c185;
   font-family: 'IM Fell English SC', serif;
@@ -12,8 +11,7 @@ body
   margin: 0;
 }
 
-.card 
-{
+.card {
   text-align: center;
   padding: 30px;
   border: 2px solid #e3c185;
@@ -21,34 +19,31 @@ body
   background-color: #3b2a42;
   max-width: 500px;
   line-height: 1.5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-h1, h2
-{
+h1, h2 {
   color: #e3c185;
   font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-h1 
-{
+h1 {
   font-size: 1.8em;
   color: #ff6a6a;
 }
 
-h2 
-{
+h2 {
   font-size: 1.5em;
   margin: 20px 0;
 }
 
-p 
-{
+p {
   margin: 10px 0;
   font-size: 1.1em;
 }
 
-hr 
-{
+hr {
   border: 0;
   height: 1px;
   background-color: #e3c185;
@@ -57,41 +52,79 @@ hr
 }
 
 /* Special Symbols Styling */
-.symbol 
-{
+.symbol {
   color: #ffdd57; /* Gold color for symbols */
   font-size: 1.5em;
   margin: 0 5px;
 }
 
-.emphasis 
-{
+.emphasis {
   color: #ff6a6a; /* Bright color for emphasis */
   font-weight: bold;
 }
 
-.emphasis-quote 
-{
+.emphasis-quote {
   font-style: italic;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #e3c185;
-  margin-top: 10px;
+  margin-top: 20px;
   display: block;
+  border-top: 1px solid #e3c185;
+  padding-top: 10px;
 }
-
 
 .link-to-final-blessing {
   margin-top: 20px;
   text-align: center;
 }
 
-.link-to-final-blessing a {
+.link-to-final-blessing a,
+.back-link a {
   color: #ff6a6a;
   font-size: 1.2em;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
-.link-to-final-blessing a:hover {
-  text-decoration: underline;
+.link-to-final-blessing a:hover,
+.back-link a:hover {
+  color: #ffdd57; /* Gold on hover for emphasis */
+}
+
+/* Button Styling */
+button {
+  background-color: #ff6a6a;
+  color: #2b1a2f;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e35555;
+}
+
+/* List Styling */
+ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 15px 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+  color: #ff6a6a;
+  font-weight: bold;
+}
+
+ul li::before {
+  content: "•";
+  color: #e3c185;
+  font-size: 1.2em;
+  margin-right: 8px;
 }
