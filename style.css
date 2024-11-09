@@ -18,8 +18,10 @@ body {
   border-radius: 10px;
   background-color: #3b2a42;
   max-width: 500px;
+  width: 100%; /* Ensure it scales well on mobile */
   line-height: 1.5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: auto; /* Centering horizontally if flex fails */
 }
 
 h1, h2 {
